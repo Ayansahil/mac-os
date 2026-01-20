@@ -1,46 +1,36 @@
 import React from "react";
-import notes from "../assets/doc-icons/notes.svg";
-import pdf from "../assets/doc-icons/pdf.svg";
-import settings from "../assets/doc-icons/settings.svg";
-import spotify from "../assets/doc-icons/spotify.svg";
-import terminal from "../assets/doc-icons/terminal.svg";
-import finder from "../assets/doc-icons/finder.svg";
-import calendar from "../assets/doc-icons/calendar.svg";
-import github from "../assets/doc-icons/github.svg";
-import mail from "../assets/doc-icons/mail.svg";
-import "./dock.scss"
+import "./dock.scss";
 
 const Dock = () => {
   return (
     <footer className="dock">
-       <div className="icon finder">
-        <img src={finder} alt="finder" />
+      <div className="icon finder">
+        <img src="/doc-icons/finder.svg" alt="finder" />
       </div>
       <div className="icon mail">
-        <img src={mail} alt="mail" />
+        <img src="doc-icons/mail.svg" alt="mail" />
       </div>
       <div className="icon notes">
-        <img src={notes} alt="notes" />
+        <img src="doc-icons/notes.svg" alt="notes" />
       </div>
       <div className="icon pdf">
-        <img src={pdf} alt="pdf" />
+        <img src="doc-icons/pdf.svg" alt="pdf" />
       </div>
       <div className="icon settings">
-        <img src={settings} alt="settings" />
+        <img src="doc-icons/settings.svg" alt="settings" />
       </div>
       <div className="icon spotify">
-        <img src={spotify} alt="spotify" />
+        <img src="doc-icons/spotify.svg" alt="spotify" />
       </div>
-     <div className="icon calendar">
-        <img src={calendar} alt="calendar" />
+      <div className="icon calendar">
+        <img src="doc-icons/calendar.svg" alt="calendar" />
       </div>
       <div className="icon github">
-        <img src={github} alt="github" />
+        <img src="doc-icons/github.svg" alt="github" />
       </div>
-       <div className="icon terminal">
-        <img src={terminal} alt="terminal" />
+      <div className="icon terminal">
+        <img src="doc-icons/terminal.svg" alt="terminal" />
       </div>
-      
     </footer>
   );
 };
