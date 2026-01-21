@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "/images/productivity-dashboard.webp",
+    "title": "Premium Productivity Dashboard",
+    "description": "A modern productivity dashboard built using HTML, CSS, and JavaScript. It includes a Todo List, Daily Planner, Pomodoro timer, Daily Goals tracker, motivational quotes, theme toggle, optimized images, and smooth UI interactions.",
+    "tags": ["HTML", "CSS", "JavaScript", "Productivity", "API"],
+    "repoLink": "https://github.com/Ayansahil/productivity-dashboard",
+    "demoLink": "https://productivity-dashboard-sigma.vercel.app/"
+  },
+  {
+    "id": 2,
+    "image": "/images/xpert-home-repair.webp",
+    "title": "Xpert Home Appliance Repair",
+    "description": "A professional service website for home appliance repair built with a clean and responsive UI. It helps users quickly book repair services, explore available solutions, and contact technicians easily through a fast, user-friendly experience.",
+    "tags": ["HTML", "CSS", "JavaScript", "Business Website", "Responsive UI"],
+    "repoLink": "https://github.com/Ayansahil/xpert-repair",
+    "demoLink": "https://bhopalrepair.in/"
+  }
+]

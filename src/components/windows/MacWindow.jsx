@@ -2,7 +2,7 @@ import React from "react";
 import { Rnd } from "react-rnd";
 import "./window.scss";
 
-const MacWindow = () => {
+const MacWindow = ({children}) => {
   return (
     <Rnd>
       <div className="window">
@@ -14,7 +14,9 @@ const MacWindow = () => {
           </div> 
            <div className="title"><p>apple@Ayans-MacBook-Air - zsh</p></div>
         </div>
-        <div className="main-content"></div>
+        <div className="main-content">
+          {children}
+        </div>
       </div>
     </Rnd>
   );
