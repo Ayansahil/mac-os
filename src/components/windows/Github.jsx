@@ -40,8 +40,8 @@ const Github = () => {
   return (
     <MacWindow>
       <div className="cards">
-        {githubData.map((project) => {
-          return <GitCard data={project} />
+        {githubData.map((project,idx) => {
+          return <GitCard data={project} key={idx} />
         })}
       </div>
     </MacWindow>

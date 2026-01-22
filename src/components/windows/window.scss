@@ -1,13 +1,12 @@
 .window {
-  height: 500px;
-  width: 600px;
   background-color: black;
   border-radius: 0.75rem;
   overflow: hidden;
+  height: 100%;
 
   color: rgb(212, 211, 211);
   font-family: system-ui;
-  font-weight: 600;
+  font-weight: 400;
   
   .nav {
     padding-inline: 0.875rem;
@@ -44,5 +43,9 @@
 
   .main-content{
     height: 100%;
+  }
+  ::-webkit-scrollbar{
+    width: 8px;
+    background-color: #fff;
   }
 }
