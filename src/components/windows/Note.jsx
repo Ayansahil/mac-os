@@ -16,7 +16,6 @@ const Note = ({ windowName, setWindowsState }) => {
         return response.text();
       })
       .then(result => {
-        console.log("Markdown loaded:", result);
         setMarkdown(result);
       })
       .catch(err => {

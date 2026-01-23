@@ -1,23 +1,60 @@
-import React from 'react'
-import './app.scss'
-import Dock from './components/Dock.jsx'
-import Nav from './components/Nav.jsx'
-import Github from './components/windows/Github.jsx'
-import Note from './components/windows/Note.jsx'
-import Resume from './components/windows/Resume.jsx'
+import React, { useState } from "react";
+import "./app.scss";
+import Dock from "./components/Dock.jsx";
+import Nav from "./components/Nav.jsx";
+import Github from "./components/windows/Github.jsx";
+import Note from "./components/windows/Note.jsx";
+import Resume from "./components/windows/Resume.jsx";
+import Spotify from "./components/windows/Spotify.jsx";
+import Cli from "./components/windows/Cli.jsx";
 
 const App = () => {
+  const [windowsState, setWindowsState] = useState({
+    github: false,
+    note: false,
+    resume: false,
+    spotify: false,
+    cli: false,
+  });
+  
   return (
-  <main>
-    <Nav />
-    <Dock />
+    <main>
+      <Nav />
+      <Dock windowsState={windowsState} setWindowsState={setWindowsState} />
 
-    <Github/>
-    <Note />
+      {windowsState.github && (
+        <Github
+          windowName="github"
+          setWindowsState={setWindowsState}
+        />
+      )}
+      {windowsState.note && (
+        <Note
+          windowName="note"
+          setWindowsState={setWindowsState}
+        />
+      )}
 
-    <Resume/>
-  </main>
-  )
-}
+      {windowsState.resume && (
+        <Resume
+          windowName="resume"
+          setWindowsState={setWindowsState}
+        />
+      )}
+      {windowsState.spotify && (
+        <Spotify
+          windowName="spotify"
+          setWindowsState={setWindowsState}
+        />
+      )}
+      {windowsState.cli && (
+        <Cli
+          windowName="cli"
+          setWindowsState={setWindowsState}
+        />
+      )}
+    </main>
+  );
+};
 
-export default App
+export default App;

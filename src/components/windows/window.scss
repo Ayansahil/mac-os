@@ -29,6 +29,7 @@
       }
       .red {
         background-color: #ff5c5f;
+        cursor:default;
       }
       .yellow {
         background-color: #fac800;
@@ -46,6 +47,13 @@
   }
   ::-webkit-scrollbar{
     width: 8px;
-    background-color: #fff;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgba(247, 247, 247, 0.478);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(201, 201, 201, 0.607);
   }
 }
