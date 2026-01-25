@@ -1,6 +1,7 @@
 import React from "react";
 import "./nav.scss";
-import DateTime from "./DateTime"
+import DateTime from "./DateTime";
+import ControlCenter from "./ControlCenter";
 
 const Nav = () => {
   return (
@@ -51,7 +52,10 @@ const Nav = () => {
         <div className="nav-item">
           <p>98%</p>
         </div>
- <img src="./navbar-icons/battery.svg" alt="battery" />
+        <img src="./navbar-icons/battery.svg" alt="battery" />
+        
+        <ControlCenter />
+        
         <div className="nav-item">
           <DateTime />
         </div>

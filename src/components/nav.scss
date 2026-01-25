@@ -3,6 +3,7 @@ nav {
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
@@ -18,25 +19,50 @@ nav {
 
   .left {
     display: flex;
+    align-items: center;
     gap: 1rem;
+
+    img {
+      display: block;
+      vertical-align: middle;
+      height: 18px;
+      width: auto;
+    }
   }
 
   .right {
     display: flex;
+    align-items: center;
     gap: 1rem;
+
+    img {
+      display: block;
+      vertical-align: middle;
+      height: 16px;
+      width: auto;
+    }
+
+    img[src*="bluetooth.svg"] {
+      transform: rotate(180deg);
+    }
   }
+
   .nav-item {
     font-size: 0.875rem;
     text-transform: capitalize;
     transition: opacity 0.2s ease;
     cursor: default;
+    display: flex;
+    align-items: center;
 
     &:hover {
       opacity: 0.9;
     }
   }
+
   .nav-item p {
     font-size: 0.875rem;
     text-transform: capitalize;
+    margin: 0;
   }
 }

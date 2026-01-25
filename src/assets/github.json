@@ -16,5 +16,25 @@
     "tags": ["HTML", "CSS", "JavaScript", "Business Website", "Responsive UI"],
     "repoLink": "https://github.com/Ayansahil/xpert-repair",
     "demoLink": "https://bhopalrepair.in/"
-  }
+  },
+  {
+  "id": 3,
+  "image": "/images/gym-web-app.webp",
+  "title": "Gym Web Application",
+  "description": "A modern and responsive gym web application built to showcase fitness services, pricing, and brand presence. The frontend features smooth navigation, clean UI, and a structured layout, with backend integration planned for forms, authentication, and data handling.",
+  "tags": ["React", "Vite", "Tailwind CSS", "React Router", "Frontend Project"],
+  "repoLink": "https://github.com/Ayansahil/Gym-web/tree/main/frontend",
+  "demoLink": "https://gym-web-tan.vercel.app/"
+},
+{
+  "id": 4,
+  "image": "/images/portfolio.webp",
+  "title": "Modern Portfolio Website",
+  "description": "A modern personal portfolio showcasing full-stack skills with a glassmorphism UI, smooth animations, dark/light theme toggle, and responsive design. Built to highlight projects, performance optimization, accessibility, and clean, scalable frontend architecture.",
+  "tags": ["React", "Vite", "Tailwind CSS", "Framer Motion", "Portfolio"],
+  "repoLink": "https://github.com/Ayansahil/Portfolio",
+  "demoLink": "https://portfolio-lemon-two-88.vercel.app/"
+}
+
+
 ]

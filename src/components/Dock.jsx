@@ -2,15 +2,24 @@ import React from "react";
 import "./dock.scss";
 import Spotify from "./windows/Spotify";
 
-const Dock = ({  setWindowsState }) => {
+const Dock = ({ setWindowsState, onWallpaperClick }) => {
   return (
     <footer className="dock">
-
-      <div className="icon finder">
+      <div
+        onClick={() => {window.open("https://www.linkedin.com/in/ayan-sahil-81aa04249/","_blank",
+          );
+        }}
+        className="icon finder"
+      >
         <img src="/doc-icons/finder.svg" alt="finder" />
       </div>
 
-      <div className="icon mail">
+      <div
+        onClick={() => {
+          window.open("mailto:ayan@example.com", "_blank");
+        }}
+        className="icon mail"
+      >
         <img src="doc-icons/mail.svg" alt="mail" />
       </div>
 
@@ -32,7 +41,7 @@ const Dock = ({  setWindowsState }) => {
         <img src="doc-icons/pdf.svg" alt="pdf" />
       </div>
 
-      <div className="icon settings">
+      <div onClick={onWallpaperClick} className="icon settings">
         <img src="doc-icons/settings.svg" alt="settings" />
       </div>
 
@@ -45,7 +54,12 @@ const Dock = ({  setWindowsState }) => {
         <img src="doc-icons/spotify.svg" alt="spotify" />
       </div>
 
-      <div className="icon calendar">
+      <div
+        onClick={() => {
+          window.open("https://calendar.google.com/", "_blank");
+        }}
+        className="icon calendar"
+      >
         <img src="doc-icons/calendar.svg" alt="calendar" />
       </div>
 
